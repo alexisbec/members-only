@@ -99,3 +99,12 @@
 .new a:hover {
     background: none;
 }
+
+/* Sign Up Form */
+
+.sign-up-form {
+  background-color: purple;
+  padding: 1em 1.5em;
+  margin: 3em;
+  cursor: pointer;
+}
