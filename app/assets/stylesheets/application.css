@@ -19,6 +19,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+#notice,
+#alert {
+  margin: 1em, 0;
+  padding: 1em;
+}
 
 .nav-bar {
   position: absolute;

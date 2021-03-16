@@ -18,8 +18,10 @@
             <td class="post-author">by: <%= post.user.author %></td>
           <% end %>
           <td class="post-content"><%= post.content %></td>
-          <td class="options"><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td class="options"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+           <% if user_signed_in? %>
+            <td class="options"><%= link_to 'Edit', edit_post_path(post) %></td>
+            <td class="options"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
