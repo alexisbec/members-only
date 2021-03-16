@@ -55,7 +55,6 @@
   font-size: 1.2em;
 }
 
-
 .sign-up:hover {
   background: white;
   color: purple;
@@ -142,7 +141,7 @@
 
 .input-fields {
   width: 20em;
-  height: 2em;
+  height: 4em;
 }
 
 .row {
