@@ -30,6 +30,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3em;
+  height: 5em;
 }
 
 .logo a {
@@ -43,19 +44,16 @@
   background: none;
 }
 
-.sign-up {
-  border: none;
-  border-radius: 4px;
+.white-btn {
   background: #fff;
-  padding: 1em 1.5em;
+  font-size: 1.5em;
+  padding: .6em 1.2em;
   margin: 1em 2em;
-  cursor: pointer;
-  font-weight: 600;
   text-decoration: none;
-  font-size: 1.2em;
+  border-radius: 5px;
 }
 
-.sign-up:hover {
+.white-btn:hover {
   background: white;
   color: purple;
 }
@@ -92,6 +90,7 @@
   padding: 1em 1.5em;
   margin: 3em;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .new a {
@@ -113,6 +112,7 @@
   border: none;
   color: #fff;
   font-size: 1.2em;
+  border-radius: 5px;
 }
 
 .label {
@@ -129,7 +129,8 @@
   flex-direction: column;
 }
 
-.devise-links a {
+.devise-links a,
+.devise {
   color: purple;
   text-decoration: none;
 }
@@ -145,5 +146,37 @@
 }
 
 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-author {
+  font-size: 2em;
+  margin-bottom: .5em;
+  text-transform: capitalize;
+}
+
+.post-title {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.post-content {
+  border: 2px purple solid;
+  padding: 1em;
+  margin: 1em;
+  width: 40em;
+  text-align: center;
+  height: auto;
+  text-transform: capitalize;
+  border-radius: 5px;
 }

@@ -15,11 +15,15 @@
     <p class="alert"><%= alert %></p>
     <nav class="nav-bar">
       <span class="logo"><%= link_to 'Clubhouse Aral', root_path %></span>
-      <% if user_signed_in? %>
-        <span><%= link_to current_user.author, edit_user_registration_path %></span>
-        <span><%= link_to "Logout", destroy_user_session_path, method: :delete %></span>
-      <% end %>
-      <%= link_to 'Sign Up', new_user_registration_path, class: "sign-up" %>
+      <div class="row">
+        <% if user_signed_in? %>
+          <span><%= link_to current_user.author, edit_user_registration_path, class: "white-btn" %></span>
+          <span><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "white-btn" %></span>
+        <% else %>
+          <span><%= link_to 'Sign Up', new_user_registration_path, class: "white-btn" %></span>
+          <span><%= link_to 'Log In', new_user_session_path, class: "white-btn" %></span>
+        <% end %>
+      </div>
     </nav>
     <%= yield %>
   </body>

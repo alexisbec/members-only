@@ -12,9 +12,12 @@
 
     <tbody>
       <% @posts.each do |post| %>
-        <tr>
-          <td class="content"><%= post.content %></td>
-          <%# <td><%=  post.users.author %></td>
+        <tr class="flex">
+          <td class="post-title"><%= post.title %></td>
+          <% if user_signed_in? %>
+            <td class="post-author">by: <%= post.user.author %></td>
+          <% end %>
+          <td class="post-content"><%= post.content %></td>
           <td class="options"><%= link_to 'Edit', edit_post_path(post) %></td>
           <td class="options"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
