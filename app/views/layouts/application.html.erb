@@ -14,8 +14,8 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <nav class="nav-bar">
-      <h2>Clubhouse Aral</h2>
-      <span class="sign-up"><%= link_to 'Sign Up', new_user_registration_path %></span>
+      <span class="logo"><%= link_to 'Clubhouse Aral', root_path %></span>
+      <%= link_to 'Sign Up', new_user_registration_path, class: "sign-up" %>
     </nav>
     <%= yield %>
   </body>
