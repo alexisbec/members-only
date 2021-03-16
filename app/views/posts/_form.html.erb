@@ -12,11 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :content %>
+    <%= form.label :title, class: "label" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content, class: "label" %>
     <%= form.text_area :content %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "New Post", class: "purple-btn" %>
   </div>
 <% end %>
