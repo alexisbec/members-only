@@ -4,10 +4,10 @@ In this project users can sign up and log in into the site as members and make p
 
 # About
 
-The purpouse of this project was how to use the devise gem to handdle user authentication and registration processes.
+The purpose of this project was to learn how to use the devise gem to handle user authentication and registration processes.
 
 In this project we:
-- Created models, views and controllers for users and posts
+- Created models, views, and controllers for users and posts
 - Made validations for the user inputs
 - Used the devise gem, a gem that is used for user authorization and authentication features
 - Worked with view helpers
