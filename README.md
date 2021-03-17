@@ -11,7 +11,8 @@ In this project we:
 - Made validations for the user inputs
 - Used the devise gem, a gem that is used for user authorization and authentication features
 - Worked with view helpers
-
+# Application Screenshot
+![screenshot](./assets/app_screenshot.png)
 # Built With:
 - Ruby on Rails
 - SQLite
@@ -22,9 +23,9 @@ In this project we:
 - Rails
 - Yarn
 
-# To Run: 
+# To Run:
 - Clone this repository.
-- Open the project folder where the repository was downloaded. 
+- Open the project folder where the repository was downloaded.
 - In your terminal, run the command -- bundle install. This will intslla all the required dependencies.
 - Thereafter,  run the migrations. To do this, while in the project root folder, run the command: -- rails db:migrate.
 - Run the command -- yarn install --check-files to install all the yarn dependencies of the project.
