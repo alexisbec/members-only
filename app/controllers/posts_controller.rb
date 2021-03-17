@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = current_user.posts.build
+    @post = Post.new
   end
 
   # POST /posts or /posts.json
