@@ -19,9 +19,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #notice,
 #alert {
-  margin: 1em, 0;
+  margin: 1em 0;
   padding: 1em;
 }
 
@@ -45,6 +46,16 @@
   font-size: 2em;
 }
 
+.devise-links a,
+.devise {
+  color: purple;
+  text-decoration: none;
+}
+
+.options a {
+  text-decoration: none;
+}
+
 .logo a:hover {
   background: none;
 }
@@ -52,7 +63,7 @@
 .white-btn {
   background: #fff;
   font-size: 1.5em;
-  padding: .6em 1.2em;
+  padding: 0.6em 1.2em;
   margin: 1em 2em;
   text-decoration: none;
   border-radius: 5px;
@@ -81,13 +92,9 @@
   font-size: 1.2em;
 }
 
-.options a {
-  text-decoration: none;
-}
-
 .options a:hover {
   background: purple;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .new {
@@ -136,12 +143,6 @@
   flex-direction: column;
 }
 
-.devise-links a,
-.devise {
-  color: purple;
-  text-decoration: none;
-}
-
 .devise-links a:hover {
   background-color: purple;
   color: #fff;
@@ -168,13 +169,13 @@
 
 .post-author {
   font-size: 2em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   text-transform: capitalize;
 }
 
 .post-title {
   font-size: 3em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .post-content {
