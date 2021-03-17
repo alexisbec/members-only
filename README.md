@@ -54,4 +54,4 @@ Feel free to check the issues page.
 Give a ⭐️ if you like this project!
 
 # 📝 License
-This project is for microverse course purposes.
+This project is [MIT](https://github.com/alexisbec/members-only/blob/feature/LICENSE) licensed.
