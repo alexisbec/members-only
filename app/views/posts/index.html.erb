@@ -14,20 +14,16 @@
       <% @posts.each do |post| %>
         <tr class="flex">
           <td class="post-title"><%= post.title %></td>
-          <% if user_signed_in? %>
-            <td class="post-author">by: <%= post.user.author %></td>
-          <% end %>
+          <td class="post-author"><%= show_author(post) %></td>
           <td class="post-content"><%= post.content %></td>
-           <% if user_signed_in? %>
-            <td class="options"><%= link_to 'Edit', edit_post_path(post) %></td>
-            <td class="options"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% end %>
+          <td class="options"><%= edit_post(post) %></td>
+          <td class="options"><%= destroy_post(post) %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
 
-  <span class="new"><%= link_to 'New Post', new_post_path %></span>
+  <%= new_post %>
 </div>
 

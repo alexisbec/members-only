@@ -16,8 +16,8 @@
     <nav class="nav-bar">
       <span class="logo"><%= link_to 'Clubhouse Aral', root_path %></span>
       <div class="row">
-        <span><%= link_to signup_link_name(current_user), signup_link_path, class: "white-btn" %></span>
-        <span><%= link_to session_link_name, session_link_path, class: "white-btn" %></span>
+        <span><%= signup_link_path %></span>
+        <span><%= session_link_path %></span>
       </div>
     </nav>
     <%= yield %>
