@@ -1,7 +1,7 @@
 module PostsHelper
   def show_author(post)
     if user_signed_in?
-      post.user.author
+      "by #{post.user.author}"
     end
   end
 
