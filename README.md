@@ -26,10 +26,10 @@ In this project we:
 # To Run:
 - Clone this repository.
 - Open the project folder where the repository was downloaded.
-- In your terminal, run the command -- bundle install. This will intslla all the required dependencies.
-- Thereafter,  run the migrations. To do this, while in the project root folder, run the command: -- rails db:migrate.
-- Run the command -- yarn install --check-files to install all the yarn dependencies of the project.
-- Start the server with -- rails s, and visit localhost:3000 to start writting posts.
+- In your terminal, run the command `bundle install`. This will install all the required dependencies.
+- Thereafter, run the migrations. To do this, while in the project root folder, run the command: `rails db:migrate`.
+- Run the command `yarn install --check-files` to install all the yarn dependencies of the project.
+- Start the server with `rails s`, and visit **localhost:3000** to start writting posts.
 
 
 # Authors
