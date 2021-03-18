@@ -1,0 +1,190 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#notice,
+#alert {
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+  height: 5em;
+}
+
+.logo a {
+  color: white;
+  margin: 1em;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.devise-links a,
+.devise {
+  color: purple;
+  text-decoration: none;
+}
+
+.options a {
+  text-decoration: none;
+}
+
+.logo a:hover {
+  background: none;
+}
+
+.white-btn {
+  background: #fff;
+  font-size: 1.5em;
+  padding: 0.6em 1.2em;
+  margin: 1em 2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.white-btn:hover {
+  background: white;
+  color: purple;
+}
+
+.body {
+  position: relative;
+  margin-top: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+.content {
+  font-size: 1.2em;
+}
+
+.options a:hover {
+  background: purple;
+  transition: 0.5s;
+}
+
+.new {
+  background-color: purple;
+  padding: 1em 1.5em;
+  margin: 3em;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.new:hover {
+  background-color: purple;
+}
+
+.new a:hover {
+  background: none;
+}
+
+/* Sign Up Form */
+
+.purple-btn {
+  background-color: purple;
+  padding: 1em 1.5em;
+  margin: 3em;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.label {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 1em 2.5em;
+}
+
+.field,
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.devise-links a:hover {
+  background-color: purple;
+  color: #fff;
+}
+
+.input-fields {
+  width: 20em;
+  height: 4em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-author {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.post-title {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.post-content {
+  border: 2px purple solid;
+  padding: 1em;
+  margin: 1em;
+  width: 40em;
+  text-align: center;
+  height: auto;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
